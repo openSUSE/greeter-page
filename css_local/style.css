@@ -62,3 +62,33 @@
 #login-wrapper a {
   margin-top: 15px;
 }
+
+
+/* oS Start Page
+=========================================================================== */
+
+#content-news article {
+  overflow: hidden;
+}
+
+.info-col { /* Cols containing News */
+  
+}
+
+.info-col h3 {
+  border-bottom: 1px solid #999;
+  padding-bottom: 0.5em;
+}
+
+.info-col h4 {
+  color: #666;
+  width: 100%;
+}
+.info-col h4 + a {
+  clear: left;
+}
+
+.details-wrapper {
+  display: none;
+  width: 100%;
+}

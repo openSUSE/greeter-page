@@ -1,18 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> -->
   
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
-  <link rel="stylesheet" href="css_local/style.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css_local/style.css" type="text/css" media="screen">
   
   
   <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="js_local/script.js" type="text/javascript" charset="utf-8"></script>
   
   
   <link rel="icon" type="image/png" href="http://static.opensuse.org/themes/bento/images/favicon.png" />
@@ -66,18 +68,14 @@
   <!-- Start: Main Content Area -->
   <div id="content" class="container_16 content-wrapper">
     
-   
-    
     <div class="grid_16 alpha omega clearfix">
       
       <div class="grid_16 alpha omega row_18">
 
         <div id="google-search-wrapper">
 
-          <!-- <img src="images_local/geeko-paper-look-slogan.png" width="477" height="240" alt="Geeko Paper Look Slogan"> -->
-          <!-- <img src="images_local/geeko-paper-look-slogan.png" width="550" height="240" alt="Geeko Paper Look Slogan"> -->
           <img src="images_local/geeko-paper-look-slogan-a.png" width="434" height="240" alt="Geeko Paper Look Slogan A">
-          
+        
           
           <form id="start-page-google-search" action="http://www.google.com/search?" method="get" accept-charset="utf-8">
             <label for="google">Google</label><input type="text" name="q" value="" id="google">
@@ -95,60 +93,49 @@
 
 
     <!-- sibling-content: well, next sibling content. -->
-    <div class="container_16">
+    <div id="content-news" class="container_16">
       
-      <div id="some_other_content" class="grid_8  alpha row_15">
-
-        <style type="text/css" media="screen">
-          #community {
-            display: none;
-          }
-        </style>
-
-        <script type="text/javascript" charset="utf-8">
-          $(document).ready(function() {
-            $('.open-links').click(function() {
-              $('#community').toggle('fast');
-              return false;
-            });
-            
-          });
-        </script>
-        
+      <section id="col-1" class="grid_8 alpha row_15 info-col">
         
 
         <h3>openSUSE Explained</h3>
-        <hr>
-        <p>Comunnity is key for openSUSE <a href="#" class="open-links" title="foo">+</a></p>
-        <div id="community">
-          <ul>
-            <li>foo</li>
-            <li>foo</li>
-            <li>foo</li>
-            <li>foo</li>          
-          </ul>
-        </div>
-      </div>
-      
-      <!-- <div id="some_other_content" class="grid_4 box row_15">
-        <div class="box-header"></div>
         
-        <h3>Title</h3>
-        <p>Some Content</p>
-                
-        <div class="box-footer">
+        <article>
+          <h4><a href="#" class="toggle-sibling" title="foo">Comunnity is key for openSUSE <span>+</span></a></h4>
+          <div class="details-wrapper">
+            <ul>
+              <li>foo</li>
+              <li>foo</li>
+              <li>foo</li>
+              <li>foo</li>
+            </ul>
+          </div>
+        </article>
+        
+        <article>
           
-        </div>
-      </div> -->
+          <h4><a href="#" class="toggle-sibling" title="foo">The little Red Cap on her way! <span>+</span></a></h4>
+          
+          <div class="details-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <div id="some_other_content" class="grid_8  alpha row_15">
+          </div>
+
+        </article>
+
+
+      </section>
+
+      <section id="col-2" class="grid_8 alpha row_15 info-col">
+
+        <h3>Power User News</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         
-        <h3>Power User News</h3>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
+      </section>
+      
+
+      
       
       <!-- <div id="some_other_content" class="grid_4 box  omega row_15">
             <div class="box-header"></div>
