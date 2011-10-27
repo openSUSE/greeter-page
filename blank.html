@@ -3,19 +3,11 @@
 <head>
 
   <meta charset="utf-8">
-  <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> -->
   
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css_local/style.css" type="text/css" media="screen">
-  
-  
-  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
-  
-  <script src="js_local/script.js" type="text/javascript" charset="utf-8"></script>
-  
+
+  <!-- TODO: 2011-10-27 Add modernizr later - http://www.modernizr.com/  -->
   
   <link rel="icon" type="image/png" href="http://static.opensuse.org/themes/bento/images/favicon.png" />
   <title>openSUSE.org - Mockup</title>
@@ -34,14 +26,7 @@
         <li id="item-community"><a href="http://opensuse.org/sitemap#community">Community</a></li>
         <li id="item-development"><a href="http://opensuse.org/sitemap#development">Development</a></li>
       </ul>
-      <!-- 
-      <form id="global-search-form" action="" method="post" accept-charset="utf-8">
-        <label for="search">search</label>
-        <input type="text" name="q" value="search" id="search" />
-        <input type="submit" value="Search" class="hidden" accesskey="" />
-      </form>
-      -->
-      
+
       <div id="login-wrapper" class=" omega">
         <a href="https://connect.opensuse.org/ICSLogin/?%22https://connect.opensuse.org//%22">Sign up</a> | <a id="login-trigger" href="#login">Login</a>
 
@@ -68,33 +53,25 @@
   <!-- Start: Main Content Area -->
   <div id="content" class="container_16 content-wrapper">
     
-    <div class="grid_16 alpha omega clearfix">
-      
-      <div class="grid_16 alpha omega row_18">
-
-        <div id="google-search-wrapper">
-
-          <img src="images_local/geeko-paper-look-slogan-a.png" width="434" height="240" alt="Geeko Paper Look Slogan A">
-        
-          
-          <form id="start-page-google-search" action="http://www.google.com/search?" method="get" accept-charset="utf-8">
-            <label for="google">Google</label><input type="text" name="q" value="" id="google">
-
-            <input type="hidden" name="ie" value="utf8" id="ie">
-            <input type="hidden" name="oe" value="utf8" id="oe">
-            <input type="hidden" name="client" value="firefox-a" id="client">
-            <input type="submit" value="Search">
-          </form>
-        </div>
-
+    <div class="grid_16 alpha omega clearfix row_18">
+      <div id="google-search-wrapper">
+        <img src="images_local/geeko-paper-look-slogan-a.png" width="434" height="240" alt="Geeko Paper Look Slogan">
+        <form id="start-page-google-search" action="http://www.google.com/search?" method="get" accept-charset="utf-8">
+          <label for="google">Google</label><input type="text" name="q" value="" id="google">
+          <input type="hidden" name="ie" value="utf8" id="ie">
+          <input type="hidden" name="oe" value="utf8" id="oe">
+          <input type="hidden" name="client" value="firefox-a" id="client">
+          <input type="submit" value="Search">
+        </form>
       </div>
-        
     </div>
 
 
-    <!-- sibling-content: well, next sibling content. -->
+    <!-- == News Area ===================================================== -->
     <div id="content-news" class="container_16">
       
+      
+      <!-- == 2nd Column ================================================ -->
       <section id="col-1" class="grid_8 alpha row_15 info-col">
         
 
@@ -126,27 +103,14 @@
 
       </section>
 
+      <!-- == 2nd Column ================================================ -->
       <section id="col-2" class="grid_8 alpha row_15 info-col">
 
         <h3>Power User News</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
         
       </section>
-      
 
-      
-      
-      <!-- <div id="some_other_content" class="grid_4 box  omega row_15">
-            <div class="box-header"></div>
-            
-            <h3>Title</h3>
-            <p>Some Content</p>
-                    
-            <div class="box-footer">
-              
-            </div>
-          </div> -->
       
     </div>
     <!--  End of sibling-content -->
@@ -171,6 +135,13 @@
   </div>
   <!-- End: Footer -->
   
+  
+  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="js_local/script.js" type="text/javascript" charset="utf-8"></script>
   
 </body>
 </html>
