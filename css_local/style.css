@@ -1,3 +1,5 @@
+@import url("iconic.css");
+
 
 #google-search-wrapper,
 #start-page-google-search {
@@ -84,11 +86,50 @@
   color: #666;
   width: 100%;
 }
-.info-col h4 + a {
-  clear: left;
+.info-col h4 a {
+/*  color: #999;*/
+}
+.info-col h4 a:hover {
+  text-decoration: none;
 }
 
 .details-wrapper {
   display: none;
   width: 100%;
+}
+
+.toggle-sibling {
+  color: #666;
+  display: block;
+}
+
+h3 .iconic {
+  margin-right: 0.2em;
+}
+.toggle-sibling .iconic {
+  margin-left: 0.5em;
+/*  color:#39c;*/
+}
+
+/* Helper
+=========================================================================== */
+
+.show {
+  display:block;
+}
+.hide {
+  display:none;
+}
+
+.iconic {
+/*  font-size: 20px;*/
+}
+
+h3 .iconic,
+h4 .iconic {
+  font-weight: normal;
+}
+h3 .iconic {
+  color: #999;
+  font-size: 1.5em;
 }
