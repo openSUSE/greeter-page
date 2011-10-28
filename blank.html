@@ -11,7 +11,14 @@
   
   <link rel="icon" type="image/png" href="http://static.opensuse.org/themes/bento/images/favicon.png" />
   <title>openSUSE.org - Mockup</title>
+ 
   
+  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="js_local/script.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -76,28 +83,40 @@
         
 
         <h3>openSUSE Explained</h3>
-        
+	<article>
+          <h4><a href="#" class="toggle-sibling" title="foo">Your openSUSE Distribution <span>+</span></a></h4>
+          <div class="details-wrapper">
+          <ul>
+            <li><a href="http://en.opensuse.org/Portal:12.1">openSUSE 12.1 Portal</a>: All information about your distribution.</li>
+            <li>See why openSUSE 12.1 is cool: The <a href="http://en.opensuse.org/Product_highlights">product highlights</a></li>
+	    <li>Learn more about the different ways to <a href="http://en.opensuse.org/Portal:Installation">install openSUSE</a></li>
+            <li>Coming from another OS? These are the <a href="http://en.opensuse.org/Application_equivalents">Application Equivalents</a>.</li>
+         </ul>
+         </div>
+       </article>
+
         <article>
           <h4><a href="#" class="toggle-sibling" title="foo">Comunnity is key for openSUSE <span>+</span></a></h4>
           <div class="details-wrapper">
             <ul>
-              <li>foo</li>
-              <li>foo</li>
-              <li>foo</li>
-              <li>foo</li>
+             <li>Learn how <a href="http://en.opensuse.org/Portal:Project">the project</a> is set up.</li>
+	     <li>openSUSE is carried on by various <a href="http://en.opensuse.org/Portal:Teams">Teams</a>.</li>
+             <li>openSUSE is yours: See <a href="http://en.opensuse.org/Portal:How_to_participate">how to participate.</a></li>
+	     <li>Join the openSUSE social platform <a href="http://connect.opensuse.org">Connect</a>.</li>
             </ul>
           </div>
         </article>
         
         <article>
-          
-          <h4><a href="#" class="toggle-sibling" title="foo">The little Red Cap on her way! <span>+</span></a></h4>
-          
+          <h4><a href="#" class="toggle-sibling" title="foo">You want more? <span>+</span></a></h4>
           <div class="details-wrapper">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <ul>
+             <li>More <a href="http://doc.opensuse.org/">documentation in depth</a>.</li>
+	     <li>Even more <a href="http://software.opensuse.org">Software</a>.</li>
+             <li>A more <a href="http://en.opensuse.org/Portal:Tumbleweed">bleeding edge system</a></li>
+	     <li>Ready-to-use Images from <a href="http://susestudio.com">SUSE-Studio</a>.</li>
+            </ul>
           </div>
-
         </article>
 
 
@@ -106,12 +125,45 @@
       <!-- == 2nd Column ================================================ -->
       <section id="col-2" class="grid_8 alpha row_15 info-col">
 
-        <h3>Power User News</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-      </section>
+        <h3>Experienced Users</h3>
+        <article>
+          <h4><a href="#" class="toggle-sibling" title="foo">Bugs and Features <span>+</span></a></h4>
+          <div class="details-wrapper">
+            <ul>
+             <li>All about our Bugreporting tool <a href="http://en.opensuse.org/Bugzilla/">Bugzilla</a>.</li>
+	     <li>The important <a href="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bugreporting FAQ</a>.</li>
+	     <li>The most annoying <a href="http://en.opensuse.org/openSUSE:Most_annoying_bugs_12.1_dev">Bugs</a>.</li> 
+	     <li>Work on <a href="http://features.opensuse.org">features</a> in the 
+                         <a href="http://en.opensuse.org/openSUSE:Openfate_screening">screening team</a></li>
+            </ul>
+          </div>
+        </article>
 
-      
+        <article>
+          <h4><a href="#" class="toggle-sibling" title="foo">Stay in touch <span>+</span></a></h4>
+          <div class="details-wrapper">
+            <ul>
+             <li>Read blogs on the <a href="http://planetsuse.org">openSUSE Planet</a>.</li>
+	     <li>Interesting <a href="https://hermes.opensuse.org/feeds">feeds around the project.</a></li>
+	     <li>openSUSE <a href="http://news.opensuse.org">News and Announcements</a>.</li>
+	     <li>Effective Communication on <a href="http://en.opensuse.org/openSUSE:Mailing_lists">Mailinglists</a>.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h4><a href="#" class="toggle-sibling" title="foo">Contribute <span>+</span></a></h4>
+          <div class="details-wrapper">
+            <ul>
+             <li>People active worldwide: The <a href="http://en.opensuse.org/openSUSE:Ambassadors">openSUSE Ambassadors</a>.</li>
+	     <li>Tell about it: <a href="http://en.opensuse.org/openSUSE:Marketing">openSUSE Marketing</a>.</li>
+             <li>Make it appealing: Help on <a href="http://en.opensuse.org/Portal:Artwork">openSUSE Artwork</a></li>
+	     <li>Work in the <a href="http://en.opensuse.org/Portal:Factory">Factory</a> and improve the next openSUSE release.</li>
+	
+            </ul>
+          </div>
+        </article>
+      </section>
     </div>
     <!--  End of sibling-content -->
     
@@ -128,20 +180,12 @@
     </div>
     <div id="footer-legal" class="border-top grid_16">
       <p>
-        &copy; 2010 Novell, Inc. All rights reserved. Novell is a registered trademark and
+        &copy; 2011 Novell, Inc. All rights reserved. Novell is a registered trademark and
         openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries.
       </p>
     </div>
   </div>
   <!-- End: Footer -->
-  
-  
-  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
-  
-  <script src="js_local/script.js" type="text/javascript" charset="utf-8"></script>
   
 </body>
 </html>
