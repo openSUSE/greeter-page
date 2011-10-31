@@ -85,6 +85,7 @@
 .info-col h4 {
   color: #666;
   width: 100%;
+  margin-bottom: 0;
 }
 .info-col h4 a {
 /*  color: #999;*/
@@ -97,6 +98,13 @@
   display: none;
   width: 100%;
 }
+  .details-wrapper ul {
+    list-style-position: outside;
+    line-height: 1.5em;
+  }
+    .details-wrapper li {
+      margin-bottom: 1em;
+    }
 
 .toggle-sibling {
   color: #666;
