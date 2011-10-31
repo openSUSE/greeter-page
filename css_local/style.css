@@ -82,14 +82,18 @@
   padding-bottom: 0.5em;
 }
 
+.info-col article {
+  margin-bottom: 0.5em;
+}
+
 .info-col h4 {
   color: #666;
   width: 100%;
   margin-bottom: 0;
 }
-.info-col h4 a {
-/*  color: #999;*/
-}
+
+.info-col h4 a {}
+
 .info-col h4 a:hover, .info-col h4 a:focus {
   text-decoration: none;
 }
@@ -101,6 +105,8 @@
   .details-wrapper ul {
     list-style-position: outside;
     line-height: 1.5em;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px dotted #ddd;
   }
     .details-wrapper li {
       margin-bottom: 1em;
