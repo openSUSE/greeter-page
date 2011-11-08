@@ -16,4 +16,8 @@ $(document).ready(function() {
     return false;
   });
   
+  // Detect Browser Language
+  console.log(window.navigator.language);
+  
+  
 });
