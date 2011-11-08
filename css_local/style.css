@@ -69,12 +69,24 @@
 /* oS Start Page
 =========================================================================== */
 
-#content-news article {
-  overflow: hidden;
+#content-news {
+  position: relative;
+}
+  #content-news article {
+    overflow: hidden;
+  }
+
+#info-trigger-wrapper {
+  margin: 0 auto;
+  float: none;
+  display: block;
+  text-align: center;
 }
 
 .info-col { /* Cols containing News */
-  
+  display: none;
+  margin: 0 auto;
+  float: none;
 }
 
 .info-col h3 {
