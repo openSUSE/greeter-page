@@ -100,6 +100,12 @@ nav ul.inline li {
     color: #999;
     text-shadow: #ccc 0px 3px 2px;
   }
+  
+
+.active-section .iconic {
+    color: #39c!important;
+  }
+  
 .info-col { /* Cols containing News */
   display: none;
   margin: 0 auto;

@@ -22,6 +22,10 @@ $(document).ready(function() {
   $('a.info-trigger').click(function() { // open box on click
     
     var objID = this.id; // Get ID of clicked element
+
+    $('.active-section').removeClass('active-section');
+    
+    $(this).addClass('active-section');
     
     if (objID == 'info1-trigger') { // open info-box 1
       openInfoBox('#col-1');
