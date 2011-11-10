@@ -17,19 +17,8 @@ IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 */
 
-function loadjsfile( filename ){
-  var fileref=document.createElement('script');
-  fileref.setAttribute("type","text/javascript");
-  fileref.setAttribute("src", filename);
- 
-  if (typeof fileref!="undefined") {
-    document.getElementsByTagName("head")[0].appendChild(fileref)
-  }
-}
-
 jQuery.fn.localizeFromBrowserLanguage = function() {
 	var lang = window.navigator.language;
-	loadjsfile( 'strings.js' );
 	
 	if( jQuery.isArray( i18n[lang] ) ) {
             $('html').localize( i18n[lang] );
@@ -38,7 +27,7 @@ jQuery.fn.localizeFromBrowserLanguage = function() {
 	    if( lang.charAt( 2 ) == '-' ) {
 		var l = lang.slice( 0,2 );
 		if( jQuery.inArray( l, i18n ) ) {
-		  lang = l;
+		  $('html').localize( i18n[l] );
 		}
 	    }
         }
