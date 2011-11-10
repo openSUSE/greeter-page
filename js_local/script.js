@@ -17,6 +17,7 @@ $(document).ready(function() {
   });
   
   // Toggle Info Columns
+  // =========================================================================
   
   $('a.info-trigger').click(function() { // open box on click
     
@@ -32,10 +33,9 @@ $(document).ready(function() {
   });
 
   // Close all open info-boxes and open the requested info-box
-  function openInfoBox (id) {    
+  function openInfoBox (id) {
     // close all <section> with class "active"
     $('section.active').slideUp('fast').removeClass('active');
-
      // open the requested info-box and add class "active"
     $(id).slideDown('fast').addClass('active');
   }

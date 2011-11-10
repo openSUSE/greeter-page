@@ -1,5 +1,7 @@
 @import url("iconic.css");
 
+/* Bento Reset
+=========================================================================== */
 
 #google-search-wrapper,
 #start-page-google-search {
@@ -76,17 +78,35 @@
     overflow: hidden;
   }
 
-#info-trigger-wrapper {
+
+nav ul {
+  list-style: none outside;
   margin: 0 auto;
+  display: block;
+}
+
+nav ul.inline li {
+  float: left;
+  margin-left: 1em;
+}
+
+#info-trigger-wrapper {
+  margin: 0 auto 3em;
   float: none;
   display: block;
   text-align: center;
 }
-
+  #info-trigger-wrapper .iconic {
+    color: #999;
+    text-shadow: #ccc 0px 3px 2px;
+  }
 .info-col { /* Cols containing News */
   display: none;
   margin: 0 auto;
   float: none;
+}
+#col-1.info-col {
+  display: block;
 }
 
 .info-col h3 {
@@ -96,6 +116,12 @@
 
 .info-col article {
   margin-bottom: 0.5em;
+  width: 31%;
+  margin-left:  3.3%;
+  float: left;
+}
+.info-col article:first-child {
+  margin-left: 0;
 }
 
 .info-col h4 {
@@ -111,14 +137,14 @@
 }
 
 .details-wrapper {
-  display: none;
+/*  display: none;*/
   width: 100%;
 }
   .details-wrapper ul {
     list-style-position: outside;
     line-height: 1.5em;
     border-top: 1px solid #ddd;
-    border-bottom: 1px dotted #ddd;
+/*    border-bottom: 1px dotted #ddd;*/
   }
     .details-wrapper li {
       margin-bottom: 1em;
