@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'IconicStroke';
-    src: url("iconic_stroke.eot");
-    src: local('IconicStroke'),
-    url("iconic_stroke.svg#iconic") format('svg'),
-	  url("iconic_stroke.otf") format('opentype');
+	font-family: 'IconicStroke';
+	src: url("iconic_stroke.eot");
+	src: local('IconicStroke'),
+	url("iconic_stroke.svg#iconic") format('svg'),
+	url("iconic_stroke.otf") format('opentype');
 }
 
 .iconic {

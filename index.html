@@ -1,24 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <meta charset="utf-8">
   
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css_local/style.css" type="text/css" media="screen">
+
+  <!-- TODO: 2011-10-27 Add modernizr later - http://www.modernizr.com/  -->
+  
+  <link rel="icon" type="image/png" href="http://static.opensuse.org/themes/bento/images/favicon.png" />
+  <title>openSUSE.org - Mockup</title>
+ 
   
   <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="js_local/script.js" type="text/javascript" charset="utf-8"></script>
+  <!-- localization of the page -->
+  <script src="js_local/strings.js" type="application/x-javascript" charset="utf-8"></script>
+  <script src="js_local/jquery.loc.js" type="application/x-javascript" charset="utf-8"></script>
+  <script type="application/x-javascript" charset="utf-8">
+     $(function() {
+        $('html').localizeFromBrowserLanguage();
+     });
   </script>
-  
-  <!-- wiki javascript -->
-  <script src="js_local/wiki.script.js" type="text/javascript" charset="utf-8"></script>
-  
-  <link rel="icon" type="image/png" href="http://static.opensuse.org/themes/bento/images/favicon.png" />
-  <title>openSUSE.org - Mockup</title>
-  
 </head>
 
 <body>
@@ -33,137 +41,149 @@
         <li id="item-community"><a href="http://opensuse.org/sitemap#community">Community</a></li>
         <li id="item-development"><a href="http://opensuse.org/sitemap#development">Development</a></li>
       </ul>
-      <form id="global-search-form" action="" method="post" accept-charset="utf-8">
-        <label for="search">search</label>
-        <input type="text" name="q" value="search" id="search" />
-        <input type="submit" value="Search" class="hidden" accesskey="" />
-      </form>
+
+      <div id="login-wrapper" class=" omega">
+        <a href="https://connect.opensuse.org/ICSLogin/?%22https://connect.opensuse.org//%22">Sign up</a> | <a id="login-trigger" href="#login">Login</a>
+
+        <div id="login-form">
+          <form action="index-extended_submit" method="get" accept-charset="utf-8">
+
+            <p><label class="inlined" for="username">Username</label><input type="text" class="inline-text" name="username" value="" id="username" /></p>
+            <p><label class="inlined" for="password">Password</label><input type="password" class="inline-text" name="password" value="" id="password" /></p>
+
+            <p><input type="submit" value="Login" /></p>
+            <p class="slim-footer"><a id="close-login" href="#cancel">Cancel</a></p>
+          </form>
+        </div>
+      </div>
+      
     </div>
   </div>
   <!-- End: Header -->
 
   <div id="subheader" class="container_16">
-    <div id="breadcrump" class="grid_12 alpha">
-      <a href="#" title=""><img src="images/home_grey.png" width="16" height="16" alt="Home" /> Home</a> > <a href="#" title="">Breadcrump</a> > <a href="#" title="">Breadcrump</a> > <a href="#" title="">Breadcrump</a>
-    </div>
-    
-    <div id="login-wrapper" class="grid_4 omega">
-      <a href="#signup-page">Sign up</a> | <a id="login-trigger" href="#login" accesskey="l">Login</a>
-      
-      <div id="login-form">
-        <form action="index-extended_submit" method="get" accept-charset="utf-8">
-          <p><label class="inlined" for="username">Username</label><input type="text" class="inline-text" name="username" value="" id="username" /></p>
-          <p><label class="inlined" for="password">Password</label><input type="password" class="inline-text" name="password" value="" id="password" /></p>
-          
-          <p><input type="submit" value="Login" id="send_submit" /></p>
-          <p class="slim-footer"><a id="close-login" href="#cancel" accesskey="c">Cancel</a></p>
-        </form>
-      </div>
-    </div>
-    
-    <!-- disables for a while -->
-    <div id="local-user-actions" class="grid_4 omega" style="display: none;">
-      
-      <ul id="pt-personal">
-        <!-- Begin Personal links (Login, etc.) xx-->
-        <!-- Example Content based on mediawiki -->
-        <li><a href="#">UserName</a></li>
-        <li><a class="new" href="#">Talk</a></li>
-        <li><a href="#">Preferences</a></li>
-        <li><a href="#">Watchlist</a></li>
-        <li><a href="#">Contributions</a></li>
-        <li><a href="#">Log out</a></li>
-        <!-- End Personal links (Login, etc.) -->
-      </ul>
-    </div>
-    <!-- /disables for a while -->    
+
   </div>
 
   <!-- Start: Main Content Area -->
   <div id="content" class="container_16 content-wrapper">
     
-    <div class="column grid_4 alpha">
-
-      <div class=" box box-shadow navigation">
-        <h2 class="box-header">Example Pages</h2>
-        <ul class="navigation">
-          <li><a href="blank.html">Blank-Template</a></li>
-          <li><a href="extended.html">All Box-Types [Fixed]</a></li>
-          <li><a href="extended.fluid.html">All Box-Types [Fluid]</a></li>
-        </ul>
-
-        <h2 class="box-subheader">References</h2>
-
-        <ul class="navigation">
-
-          <li><a href="http://en.opensuse.org/Boosters_Team/Projects/Integrate_all_Infrastructure_under_one_Umbrella/Styleguide">Style Guide</a></li>
-          <li><a href="http://960.gs/">960gs</a></li>
-          <li><a href="http://en.opensuse.org/Boosters_Team/Projects/Integrate_all_Infrastructure_under_one_Umbrella/Concept">Concept</a></li>
-          <li><a href="http://en.opensuse.org/Boosters_Team/Projects/Integrate_all_Infrastructure_under_one_Umbrella/Design">Concept Graphics</a></li>
-          <li><a href="http://gitorious.org/opensuse/themes">GIT Repository</a></li>
-          <!-- <li><a href="#">Item</a></li> -->
-        </ul>
-          
-         <div class="box-footer">
-         </div>
+    <div class="grid_16 alpha omega clearfix row_12">
+      <div id="google-search-wrapper">
+        <img src="images_local/geeko-paper-look-slogan-a.png" width="434" height="240" alt="Geeko Paper Look Slogan">
+        <form id="start-page-google-search" action="http://www.google.com/search?" method="get" accept-charset="utf-8">
+          <label for="google">Google</label><input type="text" name="q" value="" id="google">
+          <input type="hidden" name="ie" value="utf8" id="ie">
+          <input type="hidden" name="oe" value="utf8" id="oe">
+          <input type="hidden" name="client" value="firefox-a" id="client">
+          <input type="submit" value="Search">
+        </form>
       </div>
+    </div>
+    
+    <!-- Note: this clears floating, set in previous elements -->
+    <div class="clear"></div>
+
+    <!-- == News Area ===================================================== -->
+    <div id="content-news" class="container_16">
       
-      <div class=" box box-shadow navigation">
-         <h2 class="box-header">Other Resources</h2>
-         <ul class="navigation">
-           <li><a href="http://en.opensuse.org/Boosters_Team/Projects/Integrate_all_Infrastructure_under_one_Umbrella">Boosters: Umbrells Project</a></li>
-           <li><a href="http://en.opensuse.org/Boosters_Team">Boosters Team</a></li>
-           <li><a href="http://www.opensuse.org">openSUSE.org</a></li>
+      <nav id="info-trigger-wrapper" class="grid_6">
+        <ul class="inline">
+          <li><a id="info1-trigger" class="info-trigger" href="#"><span class="iconic lightbulb xl block"></span>openSUSE Explained</a></li>
+          <li><a id="info2-trigger" class="info-trigger" href="#"><span class="iconic cog xl block"></span>Experienced Users</a></li>
+        </ul>
+        <div class="clear"></div>
+      </nav>
+      
+      <!-- == 2nd Column ================================================ -->
+      <section id="col-1" class="grid_16 info-col active">
+        
+        <!-- <h3>openSUSE Explained <span class="iconic lightbulb"></span></h3> -->
+        <article>
+          <h4><a href="#" class="toggle-sibling" title="foo">openSUSE 12.1<span class="iconic plus"></span></a></h4>
+          <div class="details-wrapper">
+          <ul>
+            <li><a href="http://en.opensuse.org/Portal:12.1">openSUSE 12.1 Portal</a>: The information portal about your distribution.</li>
+            <li>See why openSUSE 12.1 is cool: The <a href="http://en.opensuse.org/Product_highlights">product highlights</a></li>
+            <li>Learn more about the different ways to <a href="http://en.opensuse.org/Portal:Installation">install openSUSE</a></li>
+            <li>Coming from another OS? These are the <a href="http://en.opensuse.org/Application_equivalents">Application Equivalents</a>.</li>
          </ul>
-         <div class="box-footer">
          </div>
-       </div>
-  
-    </div>
-    
-    <div class="box box-shadow grid_12 clearfix">
-      <!-- box header -->
-      <div class="box-header grid_12">
+       </article>
+       
+        <article>
+          <h4><a href="#" class="toggle-sibling" title="">Community is key for openSUSE <span class="iconic plus"></span></a></h4>
+          <div class="details-wrapper">
+            <ul>
+             <li>Learn how <a href="http://en.opensuse.org/Portal:Project">the project</a> is set up.</li>
+             <li>openSUSE is carried on by various <a href="http://en.opensuse.org/Portal:Teams">Teams</a>.</li>
+             <li>openSUSE is yours: See <a href="http://en.opensuse.org/Portal:How_to_participate">how to participate.</a></li>
+             <li>Join the openSUSE social platform <a href="http://connect.opensuse.org">Connect</a>.</li>
+            </ul>
+          </div>
+        </article>
         
-      </div>
-      <!-- End: box header -->
-      
-      <div class="grid_12 alpha omega row_25">
+        <article>
 
-        <h1>Welcome to Bento-Theme</h1>
-        
-        <p>Bento is the new Theme of <a href="http://www.opensuse.org" title="openSUSE.org">opensuse.org</a>.</p>
+          <h4><a href="#" class="toggle-sibling" title="">You want more?  <span class="iconic plus"></span></a></h4>
 
-        <div class="grid_6 alpha">
-        <img src="http://en.opensuse.org/images/thumb/8/80/OpenSUSE.org-Mockup.png/300px-OpenSUSE.org-Mockup.png" style="border: 1px solid #ccc; margin: 15px;" class="alignleft box-shadow" />
-        </div>
-        <div class="grid_6 omega">
+          <div class="details-wrapper">
+            <ul>
+             <li>More <a href="http://doc.opensuse.org/">documentation in depth</a>.</li>
+             <li>Even more <a href="http://software.opensuse.org">Software</a>.</li>
+             <li>A <a href="http://en.opensuse.org/Portal:Tumbleweed">bleeding edge system</a></li>
+             <li>Ready-to-use Images from <a href="http://susestudio.com">SUSE-Studio</a>.</li>
+            </ul>
+          </div>
+        </article>
+
+
+      </section>
+
+      <!-- == 2nd Column ================================================ -->
+      <section id="col-2" class="grid_16 alpha info-col">
+
+        <!-- <h3>Experienced Users <span class="iconic cog"></h3> -->
+        <article>
+          <h4><a href="#" class="toggle-sibling" title="">Bugs and Features  <span class="iconic plus"></span></a></h4>
+          <div class="details-wrapper">
+            <ul>
+             <li>All about our tool <a href="http://en.opensuse.org/Bugzilla/">Bugzilla</a>.</li>
+             <li>The important <a href="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bugreporting FAQ</a>.</li>
+             <li>The most annoying <a href="http://en.opensuse.org/openSUSE:Most_annoying_bugs_12.1_dev">Bugs</a>.</li> 
+             <li>Work on <a href="http://features.opensuse.org">features</a> in the <a href="http://en.opensuse.org/openSUSE:Openfate_screening">screening team</a></li>
+            </ul>
+          </div>
+        </article>
+
+
+        <article>
+          <h4><a href="#" class="toggle-sibling" title="foo">Stay in touch  <span class="iconic plus"></span></a></h4>
+          <div class="details-wrapper">
+            <ul>
+             <li>Read blogs on the <a href="http://planet.opensuse.org">openSUSE Planet</a>.</li>
+             <li>Interesting <a href="https://hermes.opensuse.org/feeds">feeds around the project.</a></li>
+             <li>openSUSE <a href="http://news.opensuse.org">News and Announcements</a>.</li>
+             <li>Effective Communication on <a href="http://en.opensuse.org/openSUSE:Mailing_lists">Mailinglists</a>.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h4><a href="#" class="toggle-sibling" title="foo">Contribute<span class="iconic plus"></span></a></h4>
+          <div class="details-wrapper">
+            <ul>
+             <li>People active worldwide: The <a href="http://en.opensuse.org/openSUSE:Ambassadors">openSUSE Ambassadors</a>.</li>
+       <li>Tell about it: <a href="http://en.opensuse.org/openSUSE:Marketing">openSUSE Marketing</a>.</li>
+             <li>Make it appealing: Help on <a href="http://en.opensuse.org/Portal:Artwork">openSUSE Artwork</a></li>
+       <li>Work in the <a href="http://en.opensuse.org/Portal:Factory">Factory</a> and improve the next openSUSE release.</li>
   
-          <h2>Examples</h2>
-          <ul>
-            <li><a href="blank.html">Blank-Template</a></li>
-            <li><a href="extended.html">All Box-Types [Fixed]</a></li>
-            <li><a href="extended.fluid.html">All Box-Types [Fluid]</a></li>
-          </ul>
-
-          <h2>References</h2>
-          <ul>
-            <li><a href="http://en.opensuse.org/Boosters_Team/Projects/Integrate_all_Infrastructure_under_one_Umbrella/Styleguide">Style Guide</a></li>
-            <li><a href="http://en.opensuse.org/Boosters_Team/Projects/Integrate_all_Infrastructure_under_one_Umbrella/Concept">Concept</a></li>
-            <li><a href="http://en.opensuse.org/Boosters_Team/Projects/Integrate_all_Infrastructure_under_one_Umbrella/Design">Concept Graphics</a></li>
-            <li><a href="http://gitorious.org/opensuse/themes">GIT Repository</a></li>
-            <!-- <li><a href="#">Item</a></li> -->
-          </ul>
-
-        </div>
-
-      </div>
-    
-      <div class="box-footer grid_12">
-
-      </div>
-    
+            </ul>
+          </div>
+        </article>
+      </section>
     </div>
+    <!--  End of sibling-content -->
     
     <!-- Note: this clears floating, set in previous elements -->
     <div class="clear"></div>
@@ -175,26 +195,15 @@
   <div id="footer" class="container_16">
     <div id="footer-content" class="grid_16 column_4 clear-block">
       
-      <!-- NOTE: Here I currently use the CSS3 column feature. Which does not work in older Browsers. -->
-      <!-- In practice the Footer-Content look different -->
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div id="footer-legal" class="border-top grid_16">
       <p>
-        &copy; 2010 Novell, Inc. All rights reserved. Novell is a registered trademark and
+        &copy; 2011 Novell, Inc. All rights reserved. Novell is a registered trademark and
         openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries.
       </p>
     </div>
   </div>
   <!-- End: Footer -->
-  
   
 </body>
 </html>

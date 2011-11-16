@@ -19,18 +19,17 @@ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 jQuery.fn.localizeFromBrowserLanguage = function() {
 	var lang = window.navigator.language;
-	
 	if( jQuery.isArray( i18n[lang] ) ) {
-            $('html').localize( i18n[lang] );
-        } else {
-            <!-- if there is no special tranlation the first two chars are extracted and checked. -->
-	    if( lang.charAt( 2 ) == '-' ) {
-		var l = lang.slice( 0,2 );
-		if( jQuery.inArray( l, i18n ) ) {
-		  $('html').localize( i18n[l] );
+		$('html').localize( i18n[lang] );
+	} else {
+		<!-- if there is no special translation the first two chars are extracted and checked. -->
+		if( lang.charAt( 2 ) == '-' ) {
+			var l = lang.slice( 0,2 );
+			if( jQuery.inArray( l, i18n ) ) {
+				$('html').localize( i18n[l] );
+			}
 		}
-	    }
-        }
+	}
 };
 
 jQuery.fn.localize = function(stringsVar) {
